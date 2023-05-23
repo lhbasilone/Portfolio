@@ -13,7 +13,7 @@ const Projects = () => {
 
 
   const DataProject = [
-    {id: 1, name:"Club del bajon", img:club, url:"https://lhbasilone.github.io/clubBajonFinal/index.html"},
+    {id: 1, name:"El club", img:club, url:"https://lhbasilone.github.io/clubBajonFinal/index.html"},
     {id: 2, name:"proyecto 2", img:project1, url:"https://lhbasilone.github.io/clubBajonFinal/index.html"},
     {id: 3, name:"proyecto 3", img:project1, url:"https://lhbasilone.github.io/clubBajonFinal/index.html"},
   ]
