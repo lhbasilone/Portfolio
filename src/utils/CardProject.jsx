@@ -8,7 +8,7 @@ const CardProject = (propsProject) => {
             <div className="project-info-card">
                 <p>{propsProject.name}</p>
                 <div className="project-info-card-button">
-                 <a href={propsProject.url} className='button-neobrut'><img src={flecha}/></a>
+                <a href={propsProject.url} className='button-neobrut'><img src={flecha}/></a>
                 </div>
             </div>  
         </div>
