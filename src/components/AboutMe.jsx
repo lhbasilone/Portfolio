@@ -1,4 +1,13 @@
 import me from '../assets/me.png'
+import {motion} from "framer-motion"
+
+
+
+
+
+
+
+
 
 const AboutMe = () => {
 
@@ -11,11 +20,33 @@ const AboutMe = () => {
   return (
       <div id='about-me-section' className='about-me'>
           <div className='about-me-text'>
-          <h1>Sobre Mi</h1>
-          <p>Me llamo Lucas Basilone, soy de Argentina, tengo 28 años y soy Developer web con conocimientos en JavaScript, HTML, CSS, ReactJS, NodeJS y varias tecnologías más como Python y MySQL.</p>
-          <button className='button-neobrut' onClick={handleDownload}>Descargar CV</button>
+          <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+          Sobre Mi
+          </motion.h1>
+          <motion.p
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            Me llamo Lucas Basilone, soy de Argentina, tengo 28 años y soy Developer web con conocimientos en JavaScript, HTML, CSS, ReactJS, NodeJS y varias tecnologías más como Python y MySQL.
+          </motion.p>
+          <motion.button className='button-neobrut' onClick={handleDownload}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            Descargar CV
+          </motion.button>
           </div>
-          <img src={me} className='about-me-img'></img>
+          <motion.img src={me} className='about-me-img'
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          />
           <h1 className='about-me-title'>Sobre Mi</h1>
       </div>
   )

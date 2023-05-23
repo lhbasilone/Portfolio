@@ -24,7 +24,7 @@ body {
 /*Navbar*/
 
 .navbar-logo {
-  width: 180px;
+  width: 140px;
 
 }
 
@@ -264,7 +264,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 60px;
+  font-size: 70px;
   font-style: italic;
 }
 
@@ -273,8 +273,9 @@ p {
   justify-content: space-around;
   align-items: center;
   background-color: #f4f4f4;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
+
 }
 
 .project-card {
@@ -334,10 +335,10 @@ p {
   align-items: center;
 }
 
-.project-info-card button{
+.project-info-card a{
 
   margin-right: 20px;
-  padding: 25px;
+  padding: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,7 +350,7 @@ p {
   box-shadow: 5px 5px #000;
 }
 
-.project-info-card button img{
+.project-info-card a img{
   position: absolute;
   width: 50px;
   height:50px;
@@ -698,13 +699,13 @@ li:hover::before {
 }
 
 
-.project-info-card button{
+.project-info-card a{
   margin-right: 20px;
-  padding: 25px;
+  padding: 12px;
   cursor: pointer;
 }
 
-.project-info-card button img{
+.project-info-card a img{
   width: 50px;
   height:50px;
 }
@@ -743,6 +744,37 @@ li:hover::before {
 
 }
 
+
+
+@media screen and (max-width:1303px){
+
+  .navbar-logo{
+    width: 130px ;
+    margin: 10px 0 0 10px;
+  }
+
+  .navbar-link{
+    font-size: 23px;
+  }
+
+
+  .modal-container{
+    width: 655px;
+    min-height: 250px;
+}
+
+.button-modal {
+  width: 150px;
+  height: 90px;
+}
+
+
+.button-modal img{
+  width: 60px;
+  height: 60px;
+
+}
+}
 
 
 @media screen and (max-width:1096px){
@@ -803,6 +835,12 @@ li:hover::before {
   }
 
 /*Project*/
+
+.project-title{
+  padding-bottom: 30px;
+}
+
+
 .project-container{
   height: 70vh;
 }
@@ -822,12 +860,12 @@ li:hover::before {
   font-size: 25px;
 }
 
-.project-info-card button{
+.project-info-card a{
   margin-right: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 
-.project-info-card button img{
+.project-info-card a img{
   position: absolute;
   width: 30px;
   height: 30px;
@@ -867,6 +905,15 @@ li:hover::before {
 
 @media screen and (max-width:959px){
   
+  .navbar-logo{
+    width: 120px ;
+    margin: 10px 0 0 10px;
+  }
+
+  .navbar-link{
+    font-size: 23px;
+  }
+
   .project-container{
     display: flex;
     flex-direction: column;
@@ -1034,15 +1081,17 @@ li:hover::before {
     padding: 0px;
     gap: 1rem;
     position: fixed;
-    top: 90px;
+    top: 60px;
     right: -312px;
     width: 300px;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    border: 1px solid #000;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
+    backdrop-filter: blur(8px);
     
   }
 
@@ -1062,6 +1111,31 @@ li:hover::before {
   .hero-contain .hero-title {
     font-size: 45px;
   }
+
+
+  .modal-container{
+    width: 320px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-modal {
+  width: 290px;
+  height: 70px;
+}
+
+
+.button-modal img{
+  width: 60px;
+  height: 60px;
+
+}
+
+.button-close{
+  height: 30px;
+  width: 35px;
+}
 
   .about-me-text p{
     font-size: 20px;
@@ -1089,6 +1163,10 @@ li:hover::before {
 
 @media screen and (max-width:474px){
 
+
+  .about-me-text p{
+    font-size: 18px;
+  }
 
   .card-tech{
     font-size: 50px;
@@ -1139,9 +1217,21 @@ li:hover::before {
 }
 
 
-#navbar-hamburguer.active{
-  right:0px;
+
+@media screen and (max-width:384px){
+
+  .footer-title{
+    font-size: 16px;
+  }
+
+  .footer-text{
+    font-size: 12px;
+  }
+
 }
 
 
-
+#navbar-hamburguer.active{
+  right:0px;
+  top: 60px;
+}

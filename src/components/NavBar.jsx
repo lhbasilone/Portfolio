@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import hamburguer from '../assets/menu.svg';
 import close from '../assets/close.svg';
+import { motion} from 'framer-motion'
 
 const NavBar = () => {
   const [clicked, setClicked] = useState(false);
@@ -13,7 +14,9 @@ const NavBar = () => {
   return (
     <nav className='header-navbar'>
       <div className='navbar'>
-        <a href="/"><img src={logo} className='navbar-logo' /></a>
+        <a href="/">
+          <img src={logo} className='navbar-logo' />
+        </a>
         <ul id='navbar-hamburguer' className={clicked ? "active" : "close"}>
           <li>
             <a href="#about-me-section" className='navbar-link active'>Sobre mí</a>
