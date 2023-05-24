@@ -25,14 +25,14 @@ const AboutMe = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-          Sobre Mi
+          Sobre Mí
           </motion.h1>
           <motion.p
             initial={{ x: 0, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            Me llamo Lucas Basilone, soy de Argentina, tengo 28 años y soy Developer web con conocimientos en JavaScript, HTML, CSS, ReactJS, NodeJS y varias tecnologías más como Python y MySQL.
+            Me llamo Lucas Basilone, actualmente vivo en Argentina, tengo 28 años y soy Developer web con conocimientos en JavaScript, HTML, CSS, ReactJS, NodeJS y varias tecnologías más como Python y MySQL.
           </motion.p>
           <motion.button className='button-neobrut' onClick={handleDownload}
             initial={{ x: 0, opacity: 0 }}

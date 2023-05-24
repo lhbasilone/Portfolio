@@ -13,7 +13,7 @@ const Footer = () => {
             initial={{x:-500}}
             whileInView={{ x: 0 }}
             transition={{ type: "spring", stiffness: 100 }}
-          >¿TIENES UN PROYECTO? HABLEMOS
+          >¿TENÉS UN PROYECTO? HABLEMOS
           </h2>
             <div className='footer-separate'
               initial={{x:500}}

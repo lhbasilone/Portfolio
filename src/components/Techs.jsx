@@ -16,7 +16,7 @@ const Techs = () => {
       }}
       transition={{duration: 0.5}}
       >
-        Tecnologias que utilizo
+        Tecnologías que utilizo
       </motion.h1>
       <motion.div className="card-container-tech"
         whileInView={{opacity:[0.4, 0.7, 1 ]}}
