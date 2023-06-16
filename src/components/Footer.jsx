@@ -23,11 +23,11 @@ const Footer = () => {
               <p className='footer-text'>Estoy disponible para trabajar en sus increíbles proyectos. Un desarrollador front-end de Argentina apasionado por crear webs funcionales</p>        
               <p className='footer-follow'>Seguime</p>
               <div className='footer-button-div'>
+                <a href="https://www.linkedin.com/in/lucasbasilone" className='footer-button' drag><motion.img src={linkedin} alt="Linkedin" drag/></a>
                 <a href="https://github.com/lhbasilone" className='footer-button'drag >
-                  <img src={github} alt="" drag/>
+                  <motion.img src={github} alt="Github" drag/>
                 </a>
-                <a href="https://www.instagram.com/lucsbasilone/" className='footer-button' drag><motion.img src={instagram} alt="" drag/></a>
-                <a href="https://www.linkedin.com/in/lucasbasilone" className='footer-button' drag><motion.img src={linkedin} alt="" drag/></a>
+                <a href="https://www.instagram.com/lucsbasilone/" className='footer-button' drag><motion.img src={instagram} alt="Instagram" drag/></a>
               </div>
             </div>
         </aside>

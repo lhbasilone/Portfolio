@@ -42,7 +42,7 @@ const AboutMe = () => {
             Descargar CV
           </motion.button>
           </div>
-          <motion.img src={me} className='about-me-img'
+          <motion.img src={me} className='about-me-img' alt='Lucas Basilone'
             initial={{ opacity: 0 }}
             whileInView={{opacity: 1 }}
             transition={{ duration: 1 }}
