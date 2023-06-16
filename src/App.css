@@ -803,7 +803,7 @@ li:hover::before {
   }
 
   .hero-contain p span{
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .hero-contain h1{
@@ -822,7 +822,7 @@ li:hover::before {
   }
 
   .about-me-text p{
-    font-size: 23px;
+    font-size: 20px;
   }
 
 
@@ -1195,6 +1195,13 @@ li:hover::before {
 
 
 @media screen and (max-width:474px){
+
+
+  .hero-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
   .about-me-text p{

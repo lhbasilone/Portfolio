@@ -14,7 +14,7 @@ const Projects = () => {
 
 
   const DataProject = [
-    {id: 1, name:"El club", img:club, url:"https://lhbasilone.github.io/clubBajonFinal/index.html"},
+    {id: 1, name:"El club", img:club, url:"https://el-club-del-bajon.vercel.app/"},
     {id: 2, name:"Gastos", img:tracker, url:"https://expense-tracker-amber-ten.vercel.app/"},
     {id: 3, name:"proyecto 3", img:project1, url:"https://lhbasilone.github.io/clubBajonFinal/index.html"},
   ]
